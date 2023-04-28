@@ -2675,6 +2675,7 @@ function App() {
     },
   ];
 
+  //adding line chart 
   const option1 = {
     title: {
       text: "Line Chart",
@@ -2692,8 +2693,7 @@ function App() {
       label: "hi",
     },
     yAxis: {
-      type: "value",
-      title: "hi",
+      type: "value"
     },
     series: [
       {
@@ -2703,6 +2703,7 @@ function App() {
     ],
   };
 
+  //adding Bar chart
   const option2 = {
     title: {
       text: "Bar Chart",
@@ -2733,6 +2734,7 @@ function App() {
   return (
     <div className="App">
       <h1>Preparing Chart using Echart</h1>
+    {/*  Rendering Both Line and Bar chart*/}
       <div>
         <ReactEcharts option={option1} />
         <ReactEcharts option={option2} />
